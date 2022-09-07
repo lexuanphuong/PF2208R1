@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* background-color -> đổi màu nền
+        color -> đổi màu chữ 
+        width-> thay đổi chiều rộng
+        height-> thay đổi chiều cao
+        text-decoration: underline-> gạch chân
+        font-style: italic-> in nghiêng chữ
+        font-size-> điều chỉnh kích thước chữ
+        font-family-> ddiieuf chỉnh font chữ
+        text-align: center -> căn giữa text
+        border -> tạo đường viền cho element
+        border-radius -> bo góc đường viền
+        */
+       
+        
+        body {
+            background-color: darkcyan;
+            color: white;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        h1 {
+            font-size: 30px;
+            width: 50%;
+            margin: auto;
+        }
+        h2 {
+            background-color: red;
+            width: 40%;
+            height: 50px;
+            text-decoration: underline;
+            font-style: italic;
+            text-align: center;
+
+        }
+        img{
+            /* border-width: 5px;
+            border-style: dashed;
+            border-color: brown; */
+            border: 5px dashed brown;
+            border-radius: 10px;
+            padding: 30px;
+            margin: 50px;
+            margin-left: 150px;
+        }
+    </style>
+</head>
+<body>
+    <!-- headings: h1,h2,h3,h4,h5,h6 -->
+    <h1>Le Xuan Phuong's Porfolio</h1>
+    <!-- My Photo -->
+    <h2>My photo</h2>
+    <!-- img: display image -->
+    <img src="./IMG_1144.PNG" alt="This is my profile picture" width="400" height="768">
+    <br>
+    <!--General Information  -->
+    <h2>General Information</h2>
+    <h3>name</h3>
+    <!-- p: paragraph -->
+    <p>Lê Xuân Phương</p>
+    <h3>age</h3>
+    <p>38</p>
+    <h3>gender</h3>
+    <p>Male</p>
+    <h3>job</h3>
+    <p>Instructor</p>
+    <h3>date of birth</h3>
+    <p>10/10/1984</p>
+    <h3>phone number</h3>
+    <p>0978804186</p>
+    <h3>address</h3>
+    <p>Hoằng Hóa - Thanh Hóa</p>
+    <h3>githup link</h3>
+    <!-- a: anchor -->
+    <!-- href: hyperlink reference -->
+    <a href="https://github.com/lexuanphuong" target="_blank">This is my githup link</a>
+    <br><br>
+    <!-- Favorite Musics -->
+    <h2>Favorite Musics</h2>
+    <!-- ol: ordered list  -->
+    <ol>
+        <!-- list item -->
+        <li>Baby Shark</li>
+            <audio src="./Audio/y2mate.com - Mix  Baby Shark Dance and more  Nursery Rhymes  Pinkfong Songs for Children (1).mp3"controls></audio>
+        <li>Anh nhà ở đâu thế</li>
+            <audio src="./Audio/y2mate.com - AMEE x B RAY  ANH NHÀ Ở ĐÂU THẾ  Official Music Video.mp3" controls></audio>
+        <li>Vì mẹ anh bắt chia tay</li>
+            <audio src="./Audio/y2mate.com - VÌ MẸ ANH BẮT CHIA TAY  MIU LÊ x KARIK x CHÂU ĐĂNG KHOA  Official MV.mp3" controls></audio>
+    </ol>
+    <br>
+    <!-- Hobbies -->
+    <h2>Hobbies</h2>
+    <!-- ul: unordered list -->
+    <ul>
+        <li>Reading book</li>
+        <li>Swimming</li>
+        <li>Play football</li>
+    </ul>
+    <br>
+    <!-- Favorite Tourist Destination -->
+    <h2>Favorite Tourist Destination</h2>
+    <ul>
+        <li>Ha Long Bay</li>
+        <video src="./Video/Toàn cảnh vịnh hạ long, ha long bay (flycam).mp4"controls width="500"></video>
+        <li>Cau Rong <br>
+            <iframe width="500" height="315" src="https://www.youtube.com/embed/mlCPkiMFq1E?start=11" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </li>
+
+    </ul>
+</body>
+</html>
