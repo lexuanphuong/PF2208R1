@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <input type="text" id="num">
+        <select name="" id="select1">
+            <option value="a">VND</option>
+            <option value="b">USD</option>
+        </select>
+        <select name="" id="select2">
+            <option value="a">VND</option>
+            <option value="b">USD</option>
+        </select>
+        <button onclick="convert()">Convert</button>
+    </form>
+
+    <script>
+        function convert(){
+            let giatri=document.getElementById('num').value;
+            let select1=document.getElementById('select1').value;
+            let select2=document.getElementById('select2').value;
+             if (select1 == select2){
+                alert(giatri);
+             }
+             if (select1=="a" && select2=="b"){
+                alert(giatri/24000);
+             }
+             if (select1=="b" && select2=="a"){
+                alert(giatri*24000);
+             }
+             
+        }
+    </script>
+</body>
+</html>
