@@ -8,25 +8,11 @@
   </head>
   <body>
     <script>
-         let inp=prompt('Tên đăng nhập');
-         if(inp=='Admin'){
-            alert('Please enter your password.')
-         }else if(inp=='null' ){
-            alert('canceled.')
-        }else {
-                 alert('I don’t know you.')
-              }
-
-
-         let pass=prompt('Password');
-         if(pass=='TheMaster'){
-            alert('Welcome.')
-         }else if(pass=='null'){
-            alert('Canceled.')
-         }
-         else{
-            alert('Wrong password.')
-         }
+      let value = null;
+      do {
+        value = prompt("Nhập vào các số từ 1 -> 10");
+      } while (value < 1 || value > 10);
+      alert("Số bạn vừa nhập là" + value);
     </script>
   </body>
 </html>
