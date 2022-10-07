@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let value = prompt("Nhập số:");
+      let arr = [1, 6, 8, 4, 5, 7];
+      for (let i = 0; i < arr.length; i++) {
+        if (value == arr[i]) {
+          alert( "Giá trị" + " " + arr[i] + " " + "Được tìm thấy tại " + " " + i );
+        }else{
+            alert("Không tìm thấy giá trị trong mảng!");
+            break;
+        }
+      }
+    </script>
+  </body>
+</html>
