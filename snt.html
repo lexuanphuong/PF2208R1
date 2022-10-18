@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Viết 1 hàm , nhận vào 1 số, kiểm tra số đó có phải snt không -->
+    <script>
+      function isPrime(number) {
+        let SNT = true;
+        if (number < 2) {
+          SNT = false;
+        }
+        for (i = 2; i < number; i++) {
+          if (number % i == 0) {
+            SNT = false;
+            break;
+          }
+        }
+        if (SNT == true) {
+          alert("Là số nguyên tố");
+        } else {
+          alert("Không phải là số nguyên tố");
+        }
+        
+      }
+      isPrime(10);
+    </script>
+  </body>
+</html>
